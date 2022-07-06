@@ -1,0 +1,27 @@
+<script>
+    let inicio=['unacadena',300,9,2,10,50,1,0,true]; 
+    let final = new Array; 
+
+    for (let index = 0; index < inicio.length; index++) {
+        if (typeof(inicio[index])==='number'){ 
+            final.push(inicio[index]); 
+        }
+    }
+
+    for (let indice1 = 0; indice1 < final.length; indice1++) {
+        for (let indice2 = 0; indice2 < final.length; indice2++) {
+            if (final[indice1]< final[indice2]) {
+                let temp = 0;
+                temp = final[indice1];
+                final[indice1] = final[indice2];
+                final[indice2] = temp;
+            }
+        }      
+    }
+
+    for (let indexFinal = 0; indexFinal < final.length; indexFinal++) {
+        document.writeln(final[indexFinal] + "<br>");
+        console.log(final[indexFinal]);   
+    }
+
+</script>
