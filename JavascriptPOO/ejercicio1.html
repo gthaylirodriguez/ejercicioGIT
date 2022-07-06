@@ -1,0 +1,16 @@
+<script>
+    let numeroDeElementos= 10;
+
+    function Fibonacci(numero){
+        if (numero < 2) {
+            return numero;
+        }else {
+            return Fibonacci(numero -1) + Fibonacci(numero-2);   
+        }
+    }
+
+    for (let index = 0; index < numeroDeElementos; index++) {
+        document.writeln("Fibonacci : " + Fibonacci(index) + " <br>");
+    }
+
+</script>
